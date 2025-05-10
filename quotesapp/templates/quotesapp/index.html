@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quote of the Day</title>
+    <link rel="stylesheet" href="{% static 'quotesapp/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Write the author name for the quotes</h1>
+    
+        <div class="input-group">
+    <input type="text" id="author" placeholder="Search by author">
+    <button onclick="fetchQuote()">Search</button>
+</div>  <h1>Quote of the Day</h1>
+    
+        <p class="quote" id="quote-text">Loading...</p>
+        <p class="author" id="quote-author"></p>
+    </div>
+
+    <script src="{% static 'quotesapp/script.js' %}"></script>
+</body>
+</html>
